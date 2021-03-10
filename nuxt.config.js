@@ -1,4 +1,13 @@
 export default {
+  // router: {
+  //   scrollBehavior(to, from, savedPosition) {
+  //     if (savedPosition) {
+  //       return savedPosition
+  //     } else {
+  //       return { x: 0, y: 0 }
+  //     }
+  //   },
+  // },
   loading: {
     color: 'blue',
     height: '5px',
