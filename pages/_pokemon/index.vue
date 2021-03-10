@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <!-- <button @click.prevent="consoleLog">Console Log</button> -->
-    <div class="container" @click="handleBack">
+  <nuxt-link to="/">
+    <div class="container">
+      <!-- <button @click.prevent="consoleLog">Console Log</button> -->
+      <!-- <div class="container" @click="handleBack"> -->
       <h1>{{ pokemon.name }}</h1>
       <small># {{ pokemon.id }}</small>
       <div>
@@ -9,8 +10,9 @@
       </div>
       <p>Weight: {{ pokemon.weight }}</p>
       <p>Height: {{ pokemon.height }}</p>
+      <!-- </div> -->
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -46,16 +48,16 @@ export default {
     // consoleLog() {
     //   console.log(this.$router.history)
     // },
-    handleBack() {
-      // if (!this.fromRoute.name) {
-      //   this.$router.push(fallback)
-      // } else {
-      if (this.$router.history._startLocation === '/') {
-        this.$router.back()
-      } else {
-        this.$router.replace('/')
-      }
-    },
+    // handleBack() {
+    //   // if (!this.fromRoute.name) {
+    //   //   this.$router.push(fallback)
+    //   // } else {
+    //   if (this.$router.history._startLocation === '/') {
+    //     this.$router.back()
+    //   } else {
+    //     this.$router.replace('/')
+    //   }
+    // },
   },
 }
 </script>
