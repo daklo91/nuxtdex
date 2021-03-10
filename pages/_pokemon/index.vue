@@ -22,6 +22,19 @@ export default {
       pokemon: '',
     }
   },
+  head: {
+    title: 'NuxtDex | ' + this.pokemon.name,
+    meta: [
+      {
+        hid: this.pokemon.name + 'description',
+        name: 'description',
+        content:
+          'Everything you need to know about ' +
+          this.pokemon.name +
+          '! Stats, abilities, pictures and flavor text!',
+      },
+    ],
+  },
   created() {
     this.pokemon = pokemonArray.find((obj) => {
       return obj.name === this.$route.params.pokemon

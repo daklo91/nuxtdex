@@ -21,6 +21,17 @@ export default {
       pokemons: pokemonArray,
     }
   },
+  head: {
+    title: 'NuxtDex',
+    meta: [
+      {
+        hid: 'main-description',
+        name: 'description',
+        content:
+          'NuxtDex the Pokedex made with Nuxt! Browse all of the 151 original pokemon in their glory!',
+      },
+    ],
+  },
   methods: {
     consoleLog() {
       // eslint-disable-next-line no-console
